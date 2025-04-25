@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Keeps the container centered horizontally */
+  align-items: flex-start; /* Aligns the container to the top */
+  height: 100vh; /* Full viewport height */
+  box-sizing: border-box;
+  padding-top: 50px; /* Adds space at the top of the page */
+}
+
+/* Container for the Book List */
+.container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  width: 100%; /* Make container width responsive */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Heading Style */
+h2 {
+  font-size: 24px;
+  color: #4e73df;
+  margin-bottom: 20px;
+  text-align: center; /* Center the heading */
+}
+
+/* Form Inputs */
+input.form-control {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+input.form-control:focus {
+  border-color: #4e73df;
+  outline: none;
+}
+
+button {
+  background-color: #4e73df;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #375a8a;
+}
+
+/* List of Books */
+.list-group {
+  margin-top: 20px;
+}
+
+.list-group-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #f1f1f1;
+}
+
+.list-group-item strong {
+  color: #333;
+}
+
+/* Buttons inside each item */
+button.btn {
+  border-radius: 5px;
+  padding: 6px 12px;
+}
+
+button.btn-outline-primary {
+  color: #4e73df;
+  border: 1px solid #4e73df;
+}
+
+button.btn-outline-primary:hover {
+  background-color: #4e73df;
+  color: #fff;
+}
+
+button.btn-outline-danger {
+  color: #e74a3b;
+  border: 1px solid #e74a3b;
+}
+
+button.btn-outline-danger:hover {
+  background-color: #e74a3b;
+  color: #fff;
+}
+
+/* Form container and spacing */
+form {
+  margin-bottom: 20px;
+}
+
+form input,
+form button {
+  margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}
