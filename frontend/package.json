@@ -132,6 +132,9 @@
   },
   "devDependencies": {},
   "scripts": {
+    "dev": "vite",         // Start the Vite development server
+    "build": "vite build", // Build the app for production
+    "preview": "vite preview", // Preview the production build
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
